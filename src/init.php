@@ -42,23 +42,6 @@ register_block_type('bonseo/' . $block,
 
 
 /**
- * Enqueue Gutenberg block assets for both frontend + backend.
- *
- * @uses {wp-editor} for WP editor styles.
- * @since 1.0.0
- */
-function bs_basic_banner_assets()
-{
-	wp_enqueue_style(
-		'bs_basic_banner-style-css',
-		plugins_url('dist/blocks.style.build.css', dirname(__FILE__)),
-		array('wp-editor')
-	);
-}
-
-add_action('enqueue_block_assets', 'bs_basic_banner_assets');
-
-/**
  * Enqueue Gutenberg block assets for backend editor.
  *
  * @uses {wp-blocks} for block type registration & related functions.
@@ -77,14 +60,6 @@ function bs_basic_banner_editor_assets()
 		// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: File modification time.
 		true // Enqueue the script in the footer.
 	);
-
-	// Styles.
-	wp_enqueue_style(
-		'bs_basic_banner-block-editor-css', // Handle.
-		plugins_url('dist/blocks.editor.build.css', dirname(__FILE__)), // Block editor CSS.
-		array('wp-edit-blocks') // Dependency to include the CSS after it.
-	// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
-	);
 }
 
 function render_bs_basic_banner($attributes)
@@ -96,7 +71,7 @@ function render_bs_basic_banner($attributes)
 	$url = isset($attributes['url']) ? $attributes['url'] : '';
 
 	return '
-		<section class="og-banner-basic l-flex l-flex--justify-space-around a-bg a-pad l-flex--wrap' . $class . '">
+		<section class="og-banner-basic l-flex l-flex--justify-space-around a-bg a-pad l-flex--wrap ' . $class . '">
 			<div class="og-banner-basic-content l-flex l-flex--direction-column a-pad-20">
 				<h2 class="a-text a-text--xl a-text--secondary ">
 					' . $title . '
