@@ -13,9 +13,9 @@
 
 
 `Para más información`
-- [Bloque de Slider Article](https://www.bonseo.es/wordpress-plugins/banner-basic)
+- [Bloque de Slider Article](https://www.bonseo.es/bloques-gutenberg/banner-basic)
 - [Repositorio](https://gitlab.com/bonseo-guttenberg/bs-banner-basic)
 
 `Obtener más bloques`
-- [Bloques Guttenberg BonSeo](https://www.bonseo.es/wordpress-plugins)
+- [Bloques Guttenberg BonSeo](https://www.bonseo.es/bloques-gutenberg)
 - [Obtener Ayuda](https://www.bonseo.es/)

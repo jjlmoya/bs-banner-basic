@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Banner Basic [BonSeo Block]
- * Plugin URI: https://www.bonseo.es/wordpress-gutenberg-blocks/banner-basic
+ * Plugin URI: https://www.bonseo.es/bloques-gutenberg/banner-basic
  * Description: Un banner simple
  * Author: jjlmoya
  * Author URI: https://www.bonseo.es/
