@@ -71,7 +71,7 @@ function render_bs_basic_banner($attributes)
 	$url = isset($attributes['url']) ? $attributes['url'] : '';
 
 	return '
-		<section class="og-banner-basic l-flex l-flex--justify-space-around a-bg a-pad l-flex--wrap ' . $class . '">
+		<section class="og-banner-basic l-flex l-flex--justify-space-around a-bg a-pad l-flex--wrap l-grid-column--full ' . $class . '">
 			<div class="og-banner-basic-content l-flex l-flex--direction-column a-pad-20">
 				<h2 class="a-text a-text--xl a-text--secondary ">
 					' . $title . '
